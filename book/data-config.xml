@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<dataConfig>  
+    <dataSource name="source1" type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://123.57.235.72:3306/read" user="root" password="root" encoding="UTF-8"/>  
+　　<document>  
+        <entity name="solrquery" pk="id"  dataSource="source1"   
+                query="select * from  solrquery"> 
+				 <field column="id" name="id"/>
+				 <field column="author_name" name="authorName"/>	
+				<field column="book_name" name="bookName"/>
+				<field column="book_img" name="bookImg"/>
+				<field column="book_introduce" name="bookIntroduce"/>
+				<field column="book_score" name="bookScore"/>
+				<field column="book_flag" name="bookFlag"/>
+				<field column="book_word" name="bookWord"/>
+				<field column="book_click" name="bookClick"/>		    
+　　　  </entity>  
+　　</document>  
+</dataConfig>  
